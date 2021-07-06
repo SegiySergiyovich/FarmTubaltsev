@@ -105,10 +105,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 8357763784860196763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f3a8665a36dbf547b3e1aeca25b5db1, type: 3}
+  m_Script: {fileID: 11500000, guid: d0612c317b62f8e43852ce6045b377e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  senoPrefab: {fileID: 0}
+  spawnPoint: {fileID: 0}
+  fireRate: 0
   speed: 0
+  bounds: 0
 --- !u!1001 &873492875206295139
 PrefabInstance:
   m_ObjectHideFlags: 0
