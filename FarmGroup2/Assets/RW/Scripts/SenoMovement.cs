@@ -24,9 +24,18 @@ public class SenoMovement : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider col)
+
     {
-        if (other.gameObject.tag == "SenoDestroyTrigger") // other.CompareTag("SenoDestroyTrigger")
+        Sheep sheep = col.GetComponent<Sheep>();
+
+        if (sheep != null)
+        {
+            Destroy(gameObject);
+            Destroy(col.gameObject);
+        }
+
+        if (col.gameObject.tag == "SenoDestroyTrigger") // other.CompareTag("SenoDestroyTrigger")
         {
             Destroy(gameObject);
         }
